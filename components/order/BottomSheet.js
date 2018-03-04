@@ -1,22 +1,30 @@
-import React, {Component} from 'react';
-import {Container, Text, View, Card, CardItem, Body} from 'native-base';
-import {StyleSheet} from "react-native";
+import React, { Component } from 'react'
+import { Container, Text, View, Card, CardItem, Body, List } from 'native-base'
+import { StyleSheet } from 'react-native'
 
-class BttomSheet extends Component {
+import LineSpacer from '../base/LineSpacer'
+import SectionPayWith from './SectionPayWith'
+import SectionPaymentRadio from './SectionPaymentRadio'
+import SectionPrice from './SectionPrice'
+
+class BottomSheet extends Component {
   render() {
     return (
       <View style={styles.root}>
-        <Text>BottomSheet</Text>
+        <SectionPrice />
+        <LineSpacer/>
+        <SectionPaymentRadio />
+        <LineSpacer/>
+        <SectionPayWith />
       </View>
-    );
+    )
   }
 }
 
 const styles = StyleSheet.create({
   root: {
-    backgroundColor: 'green'
+    backgroundColor: 'white'
   }
-});
+})
 
-
-export default BttomSheet;
+export default BottomSheet
