@@ -19,7 +19,7 @@ const receivers = [
 class DestinationReceiverCard extends Component {
   render() {
     return (
-      <Card style={styles.root}>
+      <Card style={styles.root} elevation={7} >
         <CardItem style={styles.body}>
           <Text>
             Enter Contact Number (sender and receiver) and note for the driver
@@ -54,7 +54,11 @@ class DestinationReceiverCard extends Component {
 
 const styles = StyleSheet.create({
   root:{
-    paddingBottom: 10
+    paddingBottom: 10,
+    marginLeft: 15,
+    marginRight: 15,
+    marginBottom: 15,
+    borderRadius: 7,
   },
   body: {
     backgroundColor: 'white',

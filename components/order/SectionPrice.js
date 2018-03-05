@@ -50,7 +50,7 @@ const styles = StyleSheet.create({
   root: {
     // flex: 1,
     // backgroundColor: 'blue'
-    padding: 10
+    padding: 25
   },
   LineWrapper: {
     flexDirection: 'row',

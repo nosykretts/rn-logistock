@@ -10,7 +10,7 @@ import SectionPrice from './SectionPrice'
 class BottomSheet extends Component {
   render() {
     return (
-      <View style={styles.root}>
+      <View style={styles.root}  elevation={10}>
         <SectionPrice />
         <LineSpacer/>
         <SectionPaymentRadio />
@@ -23,7 +23,9 @@ class BottomSheet extends Component {
 
 const styles = StyleSheet.create({
   root: {
-    backgroundColor: 'white'
+    backgroundColor: 'white',
+    shadowRadius: 20,
+
   }
 })
 

@@ -25,7 +25,7 @@ class ConfirmOrderScreen extends Component {
 const styles = StyleSheet.create({
   root: {
     // flex: 1,
-    backgroundColor: 'yellow'
+    // backgroundColor: 'yellow'
   }
 })
 
